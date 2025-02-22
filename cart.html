@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Music Store</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Music Store</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <h2>Your Cart</h2>
+        
+        <table class="cart-items">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Guitar</td>
+                    <td>$500</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$500</td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr>
+                    <td>Drum Kit</td>
+                    <td>$800</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$800</td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+                <tr>
+                    <td>Piano</td>
+                    <td>$1200</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$1200</td>
+                    <td><button class="remove-btn">X</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <p>Total: <span id="total">$2500</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Music Store</p>
+    </footer>
+</body>
+</html>
